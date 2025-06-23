@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl Memorial QR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .description {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+        .app-frame {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 40px auto;
+            max-width: 400px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .app-demo {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .qr-placeholder {
+            width: 200px;
+            height: 200px;
+            background: #f0f0f0;
+            border: 2px solid #ddd;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #666;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .btn-record {
+            background: #3c5aa6;
+            color: white;
+        }
+        .btn-play {
+            background: #3cb474;
+            color: white;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .feature {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        .feature h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .github-link {
+            margin-top: 40px;
+        }
+        .github-link a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 12px 24px;
+            border: 2px solid white;
+            border-radius: 8px;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+        .github-link a:hover {
+            background: white;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐚 Pearl Memorial QR</h1>
+        <p class="description">
+            大切な思い出を音声で残し、QRコードで永続的に保存・共有できるWebアプリケーション
+        </p>
+        
+        <div class="app-frame">
+            <div class="app-demo">アプリデモ</div>
+            <div class="qr-placeholder">
+                QRコード表示エリア
+            </div>
+            <div class="buttons">
+                <button class="btn btn-record">🎤 録音</button>
+                <button class="btn btn-play">▶️ 再生</button>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>🎵 音声記録</h3>
+                <p>ブラウザから直接音声を録音し、大切な思い出やメッセージを保存できます。</p>
+            </div>
+            <div class="feature">
+                <h3>📱 QRコード生成</h3>
+                <p>録音した音声を元にQRコードを生成。スマートフォンで簡単にアクセス可能。</p>
+            </div>
+            <div class="feature">
+                <h3>💎 永続保存</h3>
+                <p>クラウドストレージに安全に保存され、いつでもアクセス可能です。</p>
+            </div>
+            <div class="feature">
+                <h3>🔗 簡単共有</h3>
+                <p>QRコードをスキャンするだけで、大切な人と思い出を共有できます。</p>
+            </div>
+        </div>
+
+        <div class="github-link">
+            <a href="https://github.com/timeless-residents/handson-pearl-qr" target="_blank">
+                📋 GitHub リポジトリを見る
+            </a>
+        </div>
+    </div>
+</body>
+</html>
